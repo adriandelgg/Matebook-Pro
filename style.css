@@ -6,11 +6,19 @@
 	box-sizing: border-box; 
 }
 
+body {
+	font-family: "Poppins", sans-serif;
+}
+button {
+	font-family: "Poppins", sans-serif;
+}
+
 /* Header & Nav */
 
 header {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 10vh;
 	margin: auto;
 	width: 85%;
@@ -23,7 +31,11 @@ header {
 }
 
 .logo-container {
-	flex: 1
+	flex: 1;
+}
+
+.logo-container h2 {
+	font-size: 1.1rem;
 }
 
 .logo-text {
@@ -48,14 +60,120 @@ nav {
 	text-decoration: none;
 }
 
+.nav-link a:hover {
+	color:rgb(195, 23, 195);
+	transition: color 0.2s ease-in;
+}
+
 .cart {
 	flex: 1;
 	justify-content: flex-end;
 }
 
 .cart-button {
-	
+	background: #c317c3;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	width: 100px;
+	height: 40px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.cart-button:hover {
+	transition: background 1s;
+	background: lightblue;
 }
 
 /* Main */ 
 
+.presentation {
+	display: flex;
+	align-items: center;
+	width: 85%;
+	min-height: 85vh;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.introduction {
+	align-items: center;
+	flex: 1;
+	min-width: 20vw;
+	padding: 20px;
+}
+
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+}
+.cta {
+	margin-top: 50px;
+
+}
+.cta-select {
+	border: 2px solid rgb(195, 23, 195);
+	background: transparent;
+	padding: 20px 50px;
+	cursor: pointer;
+	font-size: 18px;
+	margin-right: 20px;
+	border-radius: 50px;
+}
+
+.cta-select:hover {
+	transition: background 1s;
+	background: lightblue;
+}
+
+
+
+.cta-buy {
+	background: rgb(195, 23, 195);
+	order: 2px solid rgb(195, 23, 195);
+	color: white;
+	padding: 20px 50px;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 20px;
+	border-radius: 50px;
+}
+
+.cta-buy:hover {
+	transition: background 1s;
+	background: lightblue;
+}
+
+.matebook {
+	flex: 1;
+	padding: 20px;
+	transition: opacity 1s;
+}
+
+.matebook img {
+	height: 70vh;
+	filter: drop-shadow(0px 5px 3px black);
+}
+
+.big-circle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 35%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+}
+.small-circle {
+	position: absolute;
+	top: 60%;
+	right: 55%;
+	z-index: -1;
+	height: 40%;
+}
