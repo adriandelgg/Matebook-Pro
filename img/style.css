@@ -1,0 +1,61 @@
+/* Universal Styles */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box; 
+}
+
+/* Header & Nav */
+
+header {
+	display: flex;
+	align-items: center;
+	height: 10vh;
+	margin: auto;
+	width: 85%;
+}
+
+.logo-container, 
+.nav-links, 
+.cart {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1
+}
+
+.logo-text {
+	font-weight: 400;
+	margin: 7px;
+}
+
+nav {
+	flex: 2;
+}
+
+.nav-links {
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.nav-link {
+	font-size: 20px;
+}
+
+.nav-link a {
+	text-decoration: none;
+}
+
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.cart-button {
+	
+}
+
+/* Main */ 
+
